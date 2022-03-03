@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "d731c6e5-e69e-445a-bcfa-c69bed244258",
+		"name": "Entregable 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create wallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"WALL-011\",\r\n    \"numberCard\":\"4214-1011\",\r\n    \"numberPhone\":\"986413480\",\r\n    \"imei\":\"IMEI-011\",\r\n    \"document\":\"41835566\",\r\n    \"email\":\"bootcamp@gmail.com\",\r\n    \"status\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/banking-mobile/wallet",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"banking-mobile",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"PAY-001\",\r\n    \"amount\":100.0,\r\n    \"numberPhoneOrigin\":\"986413480\",\r\n    \"numberPhoneDestination\":\"986413489\",\r\n    \"date\":\"2022-02-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/banking-mobile/payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"banking-mobile",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
